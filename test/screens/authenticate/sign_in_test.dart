@@ -46,14 +46,14 @@ void main() {
   });
 
   
-  test('Given Invalid Email', (){
+  test('Given invalid Email', (){
      var result = ValidRegex().getValidEmailRegExp().hasMatch('JohnDoe1example.com');
 
     expect(result, false);
   });
 
   
-  test('Given Invalid Password', () {
+  test('Given invalid Password', () {
     var result = ValidRegex().getValidPasswordRegExp().hasMatch('happy');
 
     expect(result, false);
